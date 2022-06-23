@@ -122,12 +122,19 @@ input[type=text], select, textarea {
 
   .footer>.links>ul>li{
     list-style: none;
+    padding: 10px;
+  }
+
+
+  .footer>.partners>ul>li{
+    list-style: none;
+    padding: 10px;
   }
 
 
 
 .footer{
-    height:100px;
+    height:250px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -137,6 +144,10 @@ input[type=text], select, textarea {
 
 .last{
     align-content: center;
+}
+
+footer>.last-h4{
+    text-align: center;
 }
 
 
