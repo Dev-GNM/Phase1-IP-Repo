@@ -36,3 +36,20 @@
     color: rgb(68, 68, 141);
 }
 
+
+
+.col-sm-4{
+    padding: 50px;
+    margin: 10px;
+}
+
+
+.col-sm-5{
+    padding: 50px;
+    margin-left: 80px;
+
+}
+
+.col-sm-5>.image-responsive{
+    border-radius: 25px;
+}
