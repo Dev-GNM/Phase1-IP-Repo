@@ -100,9 +100,8 @@ input[type=text], select, textarea {
 
   .talk-us {
     border-radius: 5px;
-    
     padding: 20px;
-    margin: 15vh;
+    margin-top: 15vh;
   }
 
   .talk-us h2{
@@ -119,4 +118,26 @@ input[type=text], select, textarea {
     text-align: center;
     margin: 15vh;
   }
+
+
+  .footer>.links>ul>li{
+    list-style: none;
+  }
+
+
+
+.footer{
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+.last{
+    align-content: center;
+}
+
+
 
