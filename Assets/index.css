@@ -28,7 +28,7 @@
     background-color: rgb(68, 68, 141);
     margin: 10px;
     padding: 3px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #don:hover{
@@ -60,15 +60,37 @@
 }
 
 #main{
+    margin-bottom: 5vh;
+}
+
+
+#donations{
     background-color: #f2f2f2;
-    margin-bottom: 10svh;
 }
 
 .flexcontainer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 8vh;
+    height: 400px;
 }
+
+
+
+#donations img {
+    display: block;
+    height: 200px;
+    margin: 0 auto 25px auto;
+}
+
+
+.col-sm3 form {
+    margin: 0 auto 10px auto;
+    height: 100px;
+  }
+  
+ 
 
 
 input[type=text], select, textarea {
@@ -78,13 +100,13 @@ input[type=text], select, textarea {
     border-radius: 4px;
     box-sizing: border-box; 
     margin-top: 6px; 
-    margin-bottom: 16px; 
+    margin-bottom: 6px; 
     resize: vertical;
   }
   
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: rgb(68, 68, 141);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -98,16 +120,17 @@ input[type=text], select, textarea {
   }
 
 
-  #talk{
+  #talk>.talk-us{
     background-color: #f2f2f2;
+    margin-top: 10vh;
+    height: 550px;
   }
   
 
-  .talk-us {
+  .talk-us form {
     border-radius: 5px;
     padding: 20px;
-    margin-top: 15vh;
-    height: 500px;
+    margin-top: 10vh;
   }
 
   .talk-us h2{

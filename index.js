@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded',()=>{
-    const beerTitle = document.getElementById("beer-name")
-    const beerImage = document.getElementById("beer-image")
-    const beerDesc = document.getElementById("beer-description")
-    const beerList = document.getElementById("beer-list")
-    const reviewList = document.getElementById("review-list")
+    const itemImage = document.getElementById("item-image")
+    const itemDesc = document.getElementById("item-description")
+    const donationDesc = document.getElementById("description")
+    const itemPic = document.getElementById("myFile")
 
-    fetch("http://localhost:3000/beers")
-    .then((res)=>res.json())
-    .then((beers)=>{
-        beerTitle.textContent = beers[0].name
-        // beerImage.src = beers[8].image_url
-        beerDesc.textContent = beers[0].description
+    // fetch("http://localhost:3000/beers")
+    // .then((res)=>res.json())
+    // .then((beers)=>{
+    //     beerTitle.textContent = beers[0].name
+    //     // beerImage.src = beers[8].image_url
+    //     beerDesc.textContent = beers[0].description
         
         beers[0].reviews.forEach(review => {
             let reviews = document.createElement('li')
