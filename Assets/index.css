@@ -8,7 +8,8 @@
 }
 
 .navbar-style{
-    box-shadow: 0 5px 10px rgb(59, 53, 53);
+    box-shadow: 0 5px 10px #d3cece;
+    text-transform: uppercase;
 }
 
 .logo{
@@ -20,4 +21,6 @@
 .icon-bar{
     background: black;
 }
+
+
 
