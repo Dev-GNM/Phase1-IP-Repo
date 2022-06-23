@@ -56,7 +56,7 @@
 
 #main{
     background-color: #f2f2f2;
-    margin-bottom: 10vh;
+    margin-bottom: 10svh;
 }
 
 .flexcontainer{
@@ -102,4 +102,10 @@ input[type=text], select, textarea {
 
   .talk-us h2{
     text-align: center;
+  }
+
+
+  .col>ul>li{
+    text-decoration: none;
+    list-style: none;
   }
