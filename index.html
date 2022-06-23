@@ -27,7 +27,7 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Talk To Us</a></li>
-                    <button id="don">Donate</button>
+                    <button id="don" data-target="#donations">Donate</button>
                 </ul>
             </div>
             </div>
@@ -59,9 +59,9 @@
     </header>
     <section id="donations">
         <div class="flexcontainer">
-            <div class="col-sm-4">
+            <div class="col-sm1">
                 <div class="col">
-                    <h2>Recent Donations</h2>
+                    <h3>Recent Donations</h2>
                     <ul class="recent" id="#recent">
                     <li><a href="">Clothing</a></li>
                     <li><a href="">Kitchen Ware</a></li>
@@ -70,7 +70,7 @@
                 </ul>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm2">
                 <h3>Item Donated</h3>
                 <img
           id="Item-image"
@@ -78,11 +78,15 @@
           src="./Assets/MyImages/loading.png"
         />
         <em id="item-description">Item Description</em>
-
             </div>
-            <div class="col-sm-4">
-
-                <button class="don2">Donate</button>
+            <div class="col-sm3">
+                <h3>Donate Now!</h3>
+                <form id="description-form">
+                    <label for="description">Brief Description:</label>
+                    <textarea id="description"></textarea>
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                </form>
             </div>
         </div>
     </section>
