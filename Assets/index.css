@@ -67,7 +67,7 @@
 
 
 input[type=text], select, textarea {
-    width: 80%; 
+    width: 50%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px;
@@ -91,13 +91,18 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
+
+  #talk{
+    background-color: #f2f2f2;
+  }
   
 
   .talk-us {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    
     padding: 20px;
-    align-items: center;
+    margin: 15vh;
   }
 
   .talk-us h2{
@@ -109,3 +114,9 @@ input[type=text], select, textarea {
     text-decoration: none;
     list-style: none;
   }
+
+  .abt{
+    text-align: center;
+    margin: 15vh;
+  }
+
