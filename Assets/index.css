@@ -5,12 +5,18 @@
 
 .header{
     height: 15vh;
+    position: fixeds;
 }
 
+
+
 .navbar-style{
-    box-shadow: 0 5px 10px #d3cece;
+    box-shadow: 0 5px 10px #292727;
     text-transform: uppercase;
     padding-top: 8px;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
 }
 
 .logo{
@@ -61,6 +67,14 @@
 
 #main{
     margin-bottom: 5vh;
+    background-color: rgb(118, 76, 185);
+    color: white;
+    font-size: medium;
+}
+
+#main h1{
+    color: black;
+    font-size: 40px;
 }
 
 
