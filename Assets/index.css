@@ -4,7 +4,7 @@
 }
 
 .header{
-    height: 100vh;
+    height: 15vh;
 }
 
 .navbar-style{
@@ -54,8 +54,52 @@
     border-radius: 25px;
 }
 
+#main{
+    background-color: #f2f2f2;
+    margin-bottom: 10vh;
+}
+
 .flexcontainer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
+input[type=text], select, textarea {
+    width: 80%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  .talk-us {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .talk-us h2{
+    text-align: center;
+  }

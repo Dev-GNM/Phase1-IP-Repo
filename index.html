@@ -32,9 +32,9 @@
             </div>
             </div>
         </nav>
+    </header>
+    <section id="main">
         <div class="container">
-            <div class="row">
-                </div>
                 <div class="col-sm-4">
                     <h1 class="big-text">Donate <strong>Today</strong>, Save Lives</h1>
                     <h3>How Your Donations Help Save Lives</h3>
@@ -55,8 +55,7 @@
                     <img src="./Assets/MyImages/donations.webp" class="image-responsive" height="450px" width="550px">
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
     <section id="donations">
         <div class="flexcontainer">
             <div class="col-sm1">
@@ -102,19 +101,19 @@
     <section id="talk">
         <div class="talk-us">
             <h2>Talk To Us</h2>
-            <form id="details-form">
-              <p>
-                Name:
-                <input type="text" name="textfield" required>
-              </p>
-              <p>
-                Number:
-                <input type="text" name="textfield" required>
-              </p>
-              Address:
-              <input type="text" name="textfield" required>
-            </p>
-            </form>
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Type here.." style="height:150px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
 
         </div>
 
