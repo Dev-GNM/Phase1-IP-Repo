@@ -53,3 +53,9 @@
 .col-sm-5>.image-responsive{
     border-radius: 25px;
 }
+
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
