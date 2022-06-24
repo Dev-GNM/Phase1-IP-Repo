@@ -17,3 +17,7 @@ form.addEventListener('submit', function (event){
     event.preventDefault()
 })
 
+const contactForm = document.getElementById('contact-form')
+form.addEventListener('submit', function (event){
+    event.preventDefault()
+})
