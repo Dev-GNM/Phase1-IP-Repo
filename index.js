@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const itemDescription = document.getElementById('description-form1').value
         console.log(itemDescription)
+
+        const donFile = document.getElementById('myFile').value
+        console.log(donFile)
     })
 })
 
