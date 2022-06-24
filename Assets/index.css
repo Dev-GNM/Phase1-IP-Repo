@@ -9,6 +9,11 @@
 }
 
 
+ul> li{
+    padding: 15px;
+}
+
+
 
 .navbar-style{
     box-shadow: 0 5px 10px #292727;
@@ -32,8 +37,9 @@
 #don{
     color: white;
     background-color: rgb(68, 68, 141);
-    margin: 10px;
-    padding: 3px;
+    margin: 15px;
+    margin-top: 15px;
+    padding: 5px;
     border-radius: 5px;
 }
 
@@ -80,6 +86,7 @@
 
 #donations{
     background-color: #f2f2f2;
+    height: 500px;
 }
 
 .flexcontainer{
@@ -99,10 +106,13 @@
 }
 
 
-.col-sm3 form {
-    margin: 0 auto 10px auto;
-    height: 100px;
-  }
+
+.col-sm3{
+    padding: 10px;
+}
+
+
+
   
  
 
@@ -134,20 +144,7 @@ input[type=text], select, textarea {
   }
 
 
-  #talk>.talk-us{
-    background-color: #f2f2f2;
-    margin-top: 10vh;
-    height: 550px;
-  }
-  
-
-  .talk-us form {
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 10vh;
-  }
-
-  .talk-us h2{
+  #talk h1{
     text-align: center;
   }
 
@@ -177,12 +174,14 @@ input[type=text], select, textarea {
   .footer>.links>ul>li{
     list-style: none;
     padding: 10px;
+    color: white;
   }
 
 
   .footer>.partners>ul>li{
     list-style: none;
     padding: 10px;
+    
   }
 
 
@@ -194,14 +193,28 @@ input[type=text], select, textarea {
     justify-content: space-evenly;
     padding: 10px;
     margin: 10px;
+    color: white;
 }
 
 .last{
     align-content: center;
 }
 
+
+footer{
+  background-color: rgb(118, 76, 185);
+  color: white;
+}
+
+
+footer ul li{
+  color: white;
+}
+
+
 footer>.last-h4{
     text-align: center;
+    color: white;
 }
 
 
@@ -217,4 +230,78 @@ footer>.last-h4{
 }
 
 
-
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  
+  input[type=submit] {
+    background-color: rgb(68, 68, 141);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+  }
+  
+  
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 600px;
+  }
+  
+  .col-sm3 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 500px;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-left: 26px;
+  }
+  
+  
+  .col-75 {
+    float: left;
+    width: 55%;
+    margin-top: 6px;
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    #donations {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  

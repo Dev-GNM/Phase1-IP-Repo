@@ -1,65 +1,19 @@
-document.addEventListener('DOMContentLoaded',()=>{
-    const itemImage = document.getElementById("item-image")
-    const itemDesc = document.getElementById("item-description")
-    const donationDesc = document.getElementById("description")
-    const itemPic = document.getElementById("myFile")
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '68a65b4a39mshcf2679edfb6b35ap1eda53jsnfed9262c1f89',
+		'X-RapidAPI-Host': 'the-giving-lab-thegivinglab.p.rapidapi.com'
+	}
+};
 
-    // fetch("http://localhost:3000/beers")
-    // .then((res)=>res.json())
-    // .then((beers)=>{
-    //     beerTitle.textContent = beers[0].name
-    //     // beerImage.src = beers[8].image_url
-    //     beerDesc.textContent = beers[0].description
-        
-        beers[0].reviews.forEach(review => {
-            let reviews = document.createElement('li')
-            reviews.style.cursor = 'pointer'
-            reviews.innerText = review
-            reviewList.appendChild(reviews)
-            reviews.addEventListener('click',(e)=>{
-                e.preventDefault()
-                reviews.remove()
-            })
-        });
-        const reviewForm = document.querySelector('form#review-form')
-        reviewForm.addEventListener('submit',(e)=>{
-            e.preventDefault()
-            const customerReview = document.getElementById("review").value
-            const newReview = document.createElement('li')
-            newReview.style.cursor = 'pointer'
-            newReview.innerText = customerReview
-            reviewList.appendChild(newReview)
-            reviewForm.reset()
-            newReview.addEventListener('click',(e)=>{
-                e.preventDefault()
-                newReview.remove()
-            })
-        })
-        
+fetch('https://the-giving-lab-thegivinglab.p.rapidapi.com/users/user/%7BID%7D/activity/?apikey=undefined', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 
-        beers.forEach(beer => {
-            let beerName = document.createElement('li')
-            beerName.innerText = beer.name
-            beerList.appendChild(beerName)
-            beerName.addEventListener('click',(e)=>{
-                e.preventDefault()
-                beerTitle.textContent = beer.name
-                beerImage.src = beer.image_url
-                beerDesc.textContent = beer.description
-                beer.reviews.forEach(review => {
-                    let reviews = document.createElement('li')
-                    reviews.style.cursor = 'pointer'
-                    reviews.innerText = review
-                    reviewList.appendChild(reviews)
-                    reviews.addEventListener('click',(e)=>{
-                        e.preventDefault()
-                        reviews.remove()
-                    })
-                });
-                
-            })
-            
-        });
+const form = document.getElementById("description-form")
 
-    })
+form.addEventListener('submit', function (event){
+    event.preventDefault()
 })
+

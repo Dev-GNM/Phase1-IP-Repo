@@ -21,13 +21,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href=""><img class="logo" src="./Assets/MyImages/logo.JPG"></a>
+                    <a><img class="logo" src="./Assets/MyImages/logo.JPG"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="micon">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Talk To Us</a></li>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#talk">Talk To Us</a></li>
                     <button id="don" data-target="#donations">Donate</button>
                 </ul>
             </div>
@@ -38,7 +38,7 @@
         <div class="container">
                 <div class="col-sm-4">
                     <h1 class="big-text">Donate <strong>Today</strong>, Save Lives</h1>
-                    <h3>How Your Donations Help Save Lives</h3>
+                    <h3><strong>How Your Donations Help Save Lives</strong></h3>
                     <p>
                     Donating to the causes you care about not only benefits the charities themselves, <br>
                     it can be deeply rewarding for you too. <br>
@@ -73,7 +73,7 @@
             <div class="col-sm2">
                 <h3>Item Donated</h3>
                 <img
-          id="Item-image"
+          id="item-image"
           alt="Item Name"
           src="./Assets/MyImages/loading.png"
         />
@@ -82,10 +82,15 @@
             <div class="col-sm3">
                 <h3>Donate Now!</h3>
                 <form id="description-form">
-                    <label for="description">Brief Description:</label>
-                    <textarea id="description"></textarea>
-                    <input type="file" id="myFile" name="filename">
-                    <input type="submit">
+                  <label for="description-form">Full Name</label>
+                  <input type="text" id="fname" name="fullname" placeholder="Full Name..">
+                  <label for="description-form">Email</label>
+                  <input type="email" id="email" placeholder="Email" required><br>
+                    <label for="description-form">Item Description:</label>
+                    <textarea id="description-form1"></textarea>
+                    <h5><strong>Insert a picture of the item(s):</strong></h5>
+                    <input type="file" id="myFile" name="filename"><br>
+                    <input type="submit" id="submitButton" value="Submit">
                 </form>
             </div>
         </div>
@@ -94,9 +99,9 @@
         <div class="abt-icons">
         <div class="abt">
             <h1>About Us</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-             molestiae suscipit praesentium. Non nam dolores quaerat fuga. <br>
-             Repellat, dicta ullam! Tempore maxime corrupti soluta minima-<br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br><br>
+             molestiae suscipit praesentium. Non nam dolores quaerat fuga. <br><br>
+             Repellat, dicta ullam! Tempore maxime corrupti soluta minima-<br><br>
              autem obcaecati reprehenderit nulla recusandae.</p>
         </div>
         <div class="icons">
@@ -106,31 +111,59 @@
         </div>
     </div>
     </section>
-    <section id="talk">
-        <div class="talk-us">
-            <h2>Talk To Us</h2>
-            <form id="enquiry-form">
-
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-            
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="subject">Subject:</label>
-                <textarea id="subject" name="subject" placeholder="Type here.." style="height:150px"></textarea>
-            
+    <section id="talk">      
+        <div class="form-container">
+            <h1>Talk To Us</h1>
+            <form action="">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Type here.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
                 <input type="submit" value="Submit">
-              </form>
-        </div>
+              </div>
+            </form>
+          </div>
     </section>
     <footer> 
         <div class="footer">
         <div class="links">
         <ul>
-            <li><a href="">About</a></li>
-            <li> <a href="">Talk To Us</a></li>
-            <li><a href="">Why You should Donate?</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li> <a href="#talk">Talk To Us</a></li>
+            <li><a href="#main">Why You should Donate?</a></li>
         </ul>
     </div>
     <div class="partners">
