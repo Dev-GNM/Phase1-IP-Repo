@@ -15,6 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const donFile = document.getElementById('myFile').value
         console.log(donFile)
+
+        if (fullName == '' || yourEmail == '' || itemDescription == '' || donFile == '') {
+            swal({
+                title: "Fields Empty!",
+                text: "Please check the missing fields",
+                icon: "warning",
+                button: "Ok",
+            })
+        } else {
+            swal({
+                title: "Submitted Successfully",
+                text: "Success",
+                icon: "Yes!",
+                button: "Ok",
+            })
+        }
     })
 })
+
 
