@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const addSubject = document.getElementById('subject').value
         console.log(addSubject)
+
+        const submitBtn = document.getElementById('sub-button').value
+        console.log(submitBtn)
     })
 })
 
