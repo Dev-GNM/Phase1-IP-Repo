@@ -84,6 +84,18 @@ ul> li{
   height: 420px;
 }
 
+.col-sm2>img {
+  transition: o.3s, ease-out;
+  border-radius: 25px;
+}
+
+
+.col-sm2>img:hover {
+  width: 220px;
+  height: 220px;
+}
+
+
 #main{
     margin-bottom: 5vh;
     background-color: rgb(118, 76, 185);
