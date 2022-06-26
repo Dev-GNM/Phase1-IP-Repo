@@ -32,6 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }
     })
+    const contactForm = document.getElementById("contact-form")
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+
+        const firstName = document.getElementById('fname').value
+        console.log(fullName)
+
+        const lastName = document.getElementById('lname').value
+        console.log(yourEmail)
+
+        const itemDescription = document.getElementById('description-form1').value
+        console.log(itemDescription)
+
+        const donFile = document.getElementById('myFile').value
+        console.log(donFile)
+    })
 })
+
+
 
 
