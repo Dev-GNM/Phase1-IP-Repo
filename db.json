@@ -1,0 +1,31 @@
+{
+    "donations": [
+      {
+        "id": 1,
+        "imageurl": "https://dignity.co.ke/wp-content/uploads/2021/12/Home-Office-Desk-1-WEB-300x225.jpg",
+        "type": "Clothing",
+        "itemdescription": "Even though you don’t want your old clothes anymore, it’s almost guaranteed that someone else will. There are many people in need of usable clothing. There are disaster victims, underprivileged people, and children in need of clothing, and your donations can help. When you throw away your clothes, they have no chance of reaching people who need them the most."
+       
+      
+      },
+      {
+        "id": 2,
+        "imageurl": "https://m.media-amazon.com/images/I/61wlCkStj6L.jpg",
+        "type": "Kitchen Ware",
+        "itemdescription": "There are a few types of kitchen ware you can donate and we will show you what they are so you can make the right decision for your kitchen. These include Cookware, kitchen utensils, storage containers, and small kitchen appliances."
+        
+      },
+      {
+        "id": 3,
+        "imageurl": "https://cdn2.sofadreams.com/media/catalog/product/cache/c41fae4236734eb803fb4c6a8d783161/r/e/recliner_motion_sofa_massimo_caramel_1.jpg",
+        "type": "Books",
+        "itemdescription": "Ksh 50,000"
+      },
+      {
+        "id": 4,
+        "imageurl": "https://cdn.shopify.com/s/files/1/0511/4688/3268/files/sss-03_1024x1024_crop_center.jpg?v=1643255423",
+        "type": "Toys and Games",
+        "itemdescription": "Ksh 50,000"
+      }
+      ]
+}
