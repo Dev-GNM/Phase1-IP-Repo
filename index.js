@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectCountry = document.getElementById('country').value
         console.log(selectCountry)
 
-        const donFile = document.getElementById('myFile').value
-        console.log(donFile)
+        const addSubject = document.getElementById('subject').value
+        console.log(addSubject)
     })
 })
 
