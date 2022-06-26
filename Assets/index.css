@@ -69,6 +69,19 @@ ul> li{
 
 .col-sm-5>.image-responsive{
     border-radius: 25px;
+    transition: width 1s;
+}
+
+
+.col-sm-5>img {
+  transition: o.3s, ease-out;
+  border-radius: 25px;
+}
+
+
+.col-sm-5>img:hover {
+  width: 500px;
+  height: 420px;
 }
 
 #main{
