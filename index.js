@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault()
 
         const firstName = document.getElementById('fname').value
-        console.log(fullName)
+        console.log(firstName)
 
         const lastName = document.getElementById('lname').value
-        console.log(yourEmail)
+        console.log(lastName)
 
-        const itemDescription = document.getElementById('description-form1').value
-        console.log(itemDescription)
+        const selectCountry = document.getElementById('country').value
+        console.log(selectCountry)
 
         const donFile = document.getElementById('myFile').value
         console.log(donFile)
