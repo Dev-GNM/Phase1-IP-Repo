@@ -48,20 +48,73 @@ document.addEventListener('DOMContentLoaded', () => {
         const addSubject = document.getElementById('subject').value
         console.log(addSubject)
     })
-    // Render the donation types
-    let url = "http://localhost:3000/donations";
-    fetch(url)
-        .then(res => console.log(res.json()))
-        .then(data => {
-            itemImage.textContent = item[0].imageurl
-            itemDesc.textContent = item[0].itemDescription
-            itemType.textContent = item [0].type
-            }
-            )
-            document.getElementById('recent-don').innerHTML = html;
-        })
-        .catch((err) => console.log(err))
+})
 
+
+
+// Render the donation types
+// const options = {
+//     method: 'GET',
+//     headers: {
+//     }
+// };
+// function getAllDonations() {
+//     let url = ("http://localhost:3000/donations")
+//     fetch(url)
+//         .then(res => console.log(res.json()))
+//         .then(data => {
+//             let html = ""
+//             donations.map ( donations => {
+//                 html += `
+//              <div class="don-sect">
+//              <div class="col-sm2" id="recent-don">
+//              <h3>Item Donated</h3>
+//              <img src=" ${donations.imageurl}" alt="">
+//              <h4> ${donations.type}</h4>
+//              <h4> ${donations.itemdescription}</h4>
+//              </div>
+//             </div>   
+//             `
+//             }
+//             )
+//         })
+//         .catch (err => console.error(err))
+//     document.getElementById('new-sect').innerHTML = html
+// }
+
+            
+
+// // Initialize
+// // function initialize() {
+// //     initialize()
+// // }
+// // initialize()
+
+document.addEventListener('DOMContentLoaded', () =>{
+    getAllDonations()
+
+
+})
+function getAllDonations (){
+    fetch (" http://localhost:3000/donations")
+    .then (res => res.json()) 
+    .then (data => {
+        data.forEach(donationObject => {
+            // console.log(donationObject)
+            const recent = document.getElementById('recent1')
+            listEl = document.createElement('li')
+            listEl.innerText = donationObject.type;
+            recent.appendChild(listEl)
+            listEl.addEventListener ('click', function (){
+                const donationIMage = document.getElementById('item-image')
+                const donationDesc = document.getElementById('item-description')
+                donationIMage.src = donationObject.imageurl
+                donationDesc.innerText = donationObject.itemdescription
+                donationDesc.className = 'don'
+            })
+        });
+    })
+}
 
 
 

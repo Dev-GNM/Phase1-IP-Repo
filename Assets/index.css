@@ -325,3 +325,17 @@ input[type=text], select, textarea{
     }
   }
   
+
+
+.col-sm2{
+    margin-right: 100px;
+  }
+
+
+.don{
+    background-color: #04AA6D;
+    width: 50%;
+    margin-left: 5%;
+    text-align: center;
+
+  }
