@@ -9,9 +9,12 @@ This is the Phase 1 Independent project. It entails developing an eDonate platfo
 
 How it works
 Open the website
-Click the start quiz button
-Read the questions and click the appropriate answer.
-Submit the answers to get the score.
+Click the Talk To Us button
+Fill n your full name
+Provide a brief description of the item you are donating
+Insert a clear image of the item
+Submit the details for follow up
+
 Setup Requirements
 Git
 Web-browser or your choice
@@ -20,13 +23,18 @@ Setup Installation
 Copy the github url
 Clone to your computer
 Double click the index.html to go live/start your live server.
+
 Technologies used
 HTML
 CSS
 Javascript
 Setup/Installation Requirements
-This is the live link to view my project View Quiz Board-Project.
+
+This is the live link to view my project eDonate-Project.
+https://developergeoff98.github.io/Phase1-IP-Repo/
+
 Known Bugs
+
 No known bugs as of know :) .
 
 Support and contact details

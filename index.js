@@ -48,32 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const addSubject = document.getElementById('subject').value
         console.log(addSubject)
     })
-// Render the donation types
-let url="http://localhost:3000/donations";
-fetch(url)
-.then(res =>res.json())
-.then(data =>{
-    let html='';
-data.map(value =>{
-    html+=`
-    <div class="col-md-3">
-    <div class="card" style="width:400px">
-        <img class="card-img-top" src="/images/capturer.png" alt="Card image" style="width:100%">
-        <div class="card-body">
-          <h4 class="card-title">${value.name}</h4>
-          <h3 class="item-description">${value.address.city}</h3>
-          <p class="card-text">${value.phone}</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
-</div>
-`
-}
-)
-document.getElementById('houses').innerHTML=html;
-})
-.catch((err)=>console.log(err))
-})
+    // Render the donation types
+    let url = "http://localhost:3000/donations";
+    fetch(url)
+        .then(res => console.log(res.json()))
+        .then(data => {
+            itemImage.textContent = item[0].imageurl
+            itemDesc.textContent = item[0].itemDescription
+            itemType.textContent = item [0].type
+            }
+            )
+            document.getElementById('recent-don').innerHTML = html;
+        })
+        .catch((err) => console.log(err))
 
 
 
