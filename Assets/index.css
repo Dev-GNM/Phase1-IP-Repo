@@ -334,8 +334,13 @@ input[type=text], select, textarea{
 
 .don{
     background-color: #04AA6D;
-    width: 50%;
+    width: 40%;
     margin-left: 5%;
     text-align: center;
 
   }
+
+.flexcontainer>.col-sm2{
+  display: flex;
+  flex-direction: column;
+}
